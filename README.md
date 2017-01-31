@@ -36,7 +36,7 @@ Before you start building out your Angular web application, you will need to sig
 
       https://api.instagram.com/v1/users/USER_ID/media/recent/?count=99&&callback=JSON_CALLBACK&access_token=ACCESS_TOKEN
 
-  1. Now, you're ready to starting building your Instagram Feed in Angular 2.0 :sparkles:
+  1. Now, you're ready to starting building your Instagram Feed in Angular :sparkles:
 
 ## Style Guide
 
