@@ -1,11 +1,7 @@
 <h1>{{default.title}}</h1>
 
-	<a href ng-click="grid = !grid" class="grid">grid</a>
-	<a href ng-click="list = !list" class="list">list</a>
-
-
 <ul>
-	<li ng-repeat="post in posts" ng-hide="grid" ng-show="list">
+	<li ng-repeat="post in posts">
 		<img class="images" ng-src="{{post.images.standard_resolution.url}}" alt="{{post.caption.text}}"/>
 	<!-- 	<br>
 		{{post.caption.text}} -->
