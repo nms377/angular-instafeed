@@ -1,6 +1,7 @@
 import angular from 'angular';
 import * as uiRouter from 'angular-ui-router';
 import {DefaultState, DefaultCtrl, DefaultServiceName, DefaultService} from './default';
+import {ListState, ListCtrl, ListServiceName, ListService} from './list';
 
 import '../style/app.css';
 
@@ -16,6 +17,7 @@ angular.module(MODULE_NAME, ['ui.router'])
 	.config(($stateProvider) => {
 		$stateProvider
 		.state(DefaultState.name, DefaultState)
+		.state(ListState.name, ListState)
 		;
 	})
 	.run(($state) => {
@@ -23,7 +25,9 @@ angular.module(MODULE_NAME, ['ui.router'])
 	})
   .directive('app', app)
   .controller(DefaultState.controller, DefaultCtrl)
+  .controller(ListState.controller, ListCtrl)
   .service(DefaultServiceName, DefaultService)
+  .service(ListServiceName, ListService);
 
 
 
