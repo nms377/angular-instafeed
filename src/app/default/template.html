@@ -1,8 +1,8 @@
 <h1>{{default.title}}</h1>
 
 <ul>
-	<li ng-repeat="post in posts">
-		<img class="images" ng-src="{{post.images.standard_resolution.url}}" alt="{{post.caption.text}}"/>
+	<li ng-repeat="post in posts" class="grid">
+		<img class="grid-images" ng-src="{{post.images.standard_resolution.url}}" alt="{{post.caption.text}}"/>
 	<!-- 	<br>
 		{{post.caption.text}} -->
 	</li>
