@@ -16,6 +16,10 @@ main {
   display: block;
 }
 
+ul {
+  list-style-type: none;
+}
+
 footer {
   text-align: center;
   font-size: 0.8em;
