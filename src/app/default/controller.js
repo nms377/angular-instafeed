@@ -6,7 +6,8 @@ export const DefaultCtrl = ['$rootScope', '$scope', DefaultServiceName, class De
 	constructor($rootScope, $scope, DefaultService){
 		this.title = 'Hello World';
 
-		$scope.display = 'grid';
+		$scope.grid = 'grid';
+		$scope.list = 'list';
 
 	DefaultService.getFeed()
 		.then((posts) => {
