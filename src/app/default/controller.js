@@ -2,9 +2,11 @@ import {DefaultServiceName} from './service';
 
 console.log(DefaultServiceName);
 
-export const DefaultCtrl = ['$scope', DefaultServiceName, class DefaultCtrl {
-	constructor($scope, DefaultService){
+export const DefaultCtrl = ['$rootScope', '$scope', DefaultServiceName, class DefaultCtrl {
+	constructor($rootScope, $scope, DefaultService){
 		this.title = 'Hello World';
+
+		$scope.display = 'grid';
 
 	DefaultService.getFeed()
 		.then((posts) => {
