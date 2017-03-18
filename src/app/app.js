@@ -23,7 +23,8 @@ angular.module(MODULE_NAME, ['ui.router'])
 	})
   .directive('app', app)
   .controller(DefaultState.controller, DefaultCtrl)
-  .service(DefaultServiceName, DefaultService);
+  .service(DefaultServiceName, DefaultService)
+
 
 
 export default MODULE_NAME;
