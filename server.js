@@ -5,6 +5,8 @@ const https = require('https');
 
 app.use(express.static('public'));
 
+//	if you update your env file you need to restart your server in the terminal
+//	env files cannot have spaces otherwise it needs to be encosed in a string
 const {USER_ID, ACCESS_TOKEN} = process.env;
 
 let targetURL = `https://api.instagram.com/v1/users/${USER_ID}/media/recent/?count=99&access_token=${ACCESS_TOKEN}`;
