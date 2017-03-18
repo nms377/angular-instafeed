@@ -20,9 +20,9 @@ app.get('/api/instafeed', function (req, res){
 		});
 });
 
-function getPhotos(endpoing) {
+function getPhotos(endpoint) {
 	return new Promise((resolve, reject) => {
-		https.get(endpoing, res => {
+		https.get(endpoint, res => {
 			let rawData = '';
 			res.on('data', chunk => rawData += chunk);
 			res.on('end', () => {
