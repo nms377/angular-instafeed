@@ -4,7 +4,7 @@ console.log(ListServiceName);
 
 export const ListCtrl = ['$scope', ListServiceName, class ListCtrl{
 	constructor($scope, ListService){
-		this.title = 'List';
+		this.title = 'Nicole Sandry\'s Instagram Feed';
 
 		ListService.getFeed()
 			.then((posts) => {

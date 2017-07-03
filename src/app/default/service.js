@@ -5,7 +5,7 @@ export const DefaultService = [
 
 		constructor($http){
 			this.$http = $http;
-			this.endpoint = 'api/instafeed';
+			this.endpoint = 'api/instafeed/';
 		}
 
 		getFeed(){

@@ -4,7 +4,7 @@ console.log(DefaultServiceName);
 
 export const DefaultCtrl = ['$rootScope', '$scope', DefaultServiceName, class DefaultCtrl {
 	constructor($rootScope, $scope, DefaultService){
-		this.title = 'Hello World';
+		this.title = 'Nicole Sandry\'s Instagram Feed';
 
 		$scope.grid = 'grid';
 		$scope.list = 'list';

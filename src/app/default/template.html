@@ -1,9 +1,7 @@
 <h1>{{default.title}}</h1>
 
-<ul>
+<div class="grid-container">
 	<li ng-repeat="post in posts" class="grid">
 		<img class="grid-images" ng-src="{{post.images.standard_resolution.url}}" alt="{{post.caption.text}}"/>
-	<!-- 	<br>
-		{{post.caption.text}} -->
 	</li>
-</ul>
+</div>

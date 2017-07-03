@@ -11,7 +11,7 @@ const {USER_ID, ACCESS_TOKEN} = process.env;
 
 let targetURL = `https://api.instagram.com/v1/users/${USER_ID}/media/recent/?count=99&access_token=${ACCESS_TOKEN}`;
 
-app.get('/api/instafeed', function (req, res){
+app.get('/api/instafeed/', function (req, res){
 	getPhotos(targetURL)
 		.then((images) => {
 			res.json(JSON.parse(images));

@@ -1,7 +1,7 @@
 <h1>{{list.title}}</h1>
 
-<ul>
-	<li ng-repeat="post in posts">
+<ul class="list-container">
+	<li ng-repeat="post in posts" class="list">
 		<img class="list-images" ng-src="{{post.images.standard_resolution.url}}" alt="{{post.caption.text}}"/>
 		<br>
 		<p class="list-caption">{{post.caption.text}}</p>
