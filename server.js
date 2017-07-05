@@ -3,7 +3,7 @@ const app = express();
 // const env = require('dotenv').config();
 const https = require('https');
 
-app.use(express.static('index.html'));
+app.use(express.static('public'));
 
 //	if you update your env file you need to restart your server in the terminal
 //	env files cannot have spaces otherwise it needs to be encosed in a string
